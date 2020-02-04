@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Nadiia Derevianchenko](https://up.htmlacademy.ru/htmlcss/27/user/576665).
-* Наставник: `Валерия Кожевникова`.
+* Наставник: [Сергей Шрамко](https://htmlacademy.ru/profile/id852139).
 
 ---
 
