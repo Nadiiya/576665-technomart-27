@@ -88,7 +88,7 @@
     </header>
     <main>
       <section class="promo-section">
-        <!-- <h2>Наши преимущества</h2> -->
+        <h2 class="visually-hidden">Преимущества магазина Техномарт</h2>
         <ul class="promo products">
           <li class="promo-block-item">
             <h3 class="promo-block-title">Материалы</h3>
@@ -102,7 +102,7 @@
           </li>
           <li class="promo-block-item">
             <h3 class="promo-block-title">Техника</h3>
-            <a href=" ">для стройки</a>
+            <a href="">для стройки</a>
             <span class="promo-block-icon-3"> </span>
           </li>
         </ul>
@@ -110,12 +110,12 @@
           <li class="slide slide-drill">
             <h3 class="slide-title">Дрели</h3>
             <p class="slide-description">Соседям на радость!</p>
-            <a href="catalog.html" class="slide-linc">Открыть каталог</a>
+            <a href="catalog.html" class="button">Открыть каталог</a>
           </li>
           <li class="slide slide-hammer-drill">
             <h3 class="slide-title">Перфораторы</h3>
             <p class="slide-description">Настоящие мужские игрушки</p>
-            <a href="catalog.html" class="slide-linc">Открыть каталог</a>
+            <a href="catalog.html" class="button">Открыть каталог</a>
           </li>
         </ul>
         <ul class="promo benefits">
@@ -363,5 +363,37 @@
         </p>
       </div>
     </footer>
+
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">
+        Форма обратной связи
+      </h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="sender-name">Ваше имя:</label>
+          <input type="text" name="name"  placeholder="Имя Фамилия" id="sender-name">
+        </p>
+        <p>
+          <label for="sender-email">Ваш e-mail:</label>
+          <input type="email" name="email" placeholder="email@example.com" id="sender-email">
+        </p>
+        <p>
+          <label for="sender-message">Текст письма:</label>
+          <input type="text" name="message" placeholder="В свободной форме" id="sender-message">
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map-popup">
+      <h2 class="visually-hidden">
+        Как до нас добраться
+      </h2>
+      <p>
+        <img src="img/big-map.png" width="940" height="446" alt="Офис компании по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
