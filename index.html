@@ -369,18 +369,24 @@
         Форма обратной связи
       </h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="sender-name">Ваше имя:</label>
-          <input type="text" name="name"  placeholder="Имя Фамилия" id="sender-name">
-        </p>
-        <p>
-          <label for="sender-email">Ваш e-mail:</label>
-          <input type="email" name="email" placeholder="email@example.com" id="sender-email">
-        </p>
-        <p>
-          <label for="sender-message">Текст письма:</label>
-          <input type="text" name="message" placeholder="В свободной форме" id="sender-message">
-        </p>
+        <fieldset>
+          <legend class="visually-hidden">Контакты</legend>
+          <p>
+            <label for="sender-name">Ваше имя:</label>
+            <input type="text" name="name"  placeholder="Имя Фамилия" id="sender-name">
+          </p>
+          <p>
+            <label for="sender-email">Ваш e-mail:</label>
+            <input type="email" name="email" placeholder="email@example.com" id="sender-email">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Сообщение</legend>
+          <p>
+            <label for="sender-message">Текст письма:</label>
+            <textarea type="text" name="message" placeholder="В свободной форме" id="sender-message"></textarea>
+          </p>
+        </fieldset>
         <button type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
