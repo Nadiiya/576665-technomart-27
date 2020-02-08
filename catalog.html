@@ -98,12 +98,13 @@
         </li>
         <li>Перфораторы</li>
       </ul>
-      <h1>Перфораторы</h1>
+      <h2>Перфораторы</h2>
       <!-- ==========
       CATALOG SECTION
       =========== -->
 
       <section class="sorting">
+        <h2 class="visually-hidden">Сортировать товары</h2>
         <span>Сортировка:</span>
         <ul>
           <li>По цене</li>
@@ -117,14 +118,15 @@
       </section>
 
       <section class="catalog">
+        <h2 class="visually-hidden">Список товаров</h2>
         <ul class="product-items">
           <li class="product-item">
             <a href=""><!-- link to product's page -->
               <img class="product-image" src="img/hammer-drill-1.jpg" alt="Изображение перфоратора Bosch BFG 3000" width="218" height="170">
-              <h2>
+              <h3>
                 Перфоратор BOSCH<br>
                 BFG 3000
-              </h2>
+              </h3>
             </a>
             <span class="old-prise">22500 Р.</span>
             <span class="price">15500 Р.</span>
@@ -134,10 +136,10 @@
           <li class="product-item">
             <a href=""><!-- link to product's page -->
               <img class="product-image" src="img/hammer-drill-2.jpg" alt="Изображение перфоратора Bosch BFG 6000" width="218" height="170">
-              <h2>
+              <h3>
                 Перфоратор Bosch<br>
                 BFG 6000
-              </h2>
+              </h3>
             </a>
             <span class="old-prise">22500 Р.</span>
             <span class="price">15500 Р.</span>
@@ -147,10 +149,10 @@
           <li class="product-item">
             <a href=""><!-- link to product's page -->
               <img class="product-image" src="img/hammer-drill-3.jpg" alt="Изображение перфоратора Bosch BFG 2000" width="218" height="170">
-              <h2>
+              <h3>
                 Перфоратор BOSCH<br>
                 BFG 2000
-              </h2>
+              </h3>
             </a>
             <span class="old-prise">22500 Р.</span>
             <span class="price">15500 Р.</span>
@@ -160,10 +162,10 @@
           <li class="product-item">
             <a href=""><!-- link to product's page -->
               <img class="product-image" src="img/hammer-drill-1.jpg" alt="Изображение перфоратора Bosch BFG 3000" width="218" height="170">
-              <h2>
+              <h3>
                 Перфоратор BOSCH<br>
                 BFG 3000
-              </h2>
+              </h3>
             </a>
             <span class="old-prise">22500 Р.</span>
             <span class="price">15500 Р.</span>
@@ -173,10 +175,10 @@
           <li class="product-item">
             <a href=""><!-- link to product's page -->
               <img class="product-image" src="img/hammer-drill-2.jpg" alt="Изображение перфоратора Bosch BFG 6000" width="218" height="170">
-              <h2>
+              <h3>
                 Перфоратор BOSCH<br>
                 BFG 6000
-              </h2>
+              </h3>
             </a>
             <span class="old-prise">22500 Р.</span>
             <span class="price">15500 Р.</span>
@@ -186,10 +188,10 @@
           <li class="product-item">
             <a href=""><!-- link to product's page -->
               <img class="product-image" src="img/hammer-drill-3.jpg" alt="Изображение перфоратора Bosch BFG 2000" width="218" height="170">
-              <h2>
+              <h3>
                 Перфоратор BOSCH<br>
                 BFG 2000
-              </h2>
+              </h3>
             </a>
             <span class="old-prise">22500 Р.</span>
             <span class="price">15500 Р.</span>
@@ -199,10 +201,10 @@
           <li class="product-item">
             <a href=""><!-- link to product's page -->
               <img class="product-image" src="img/hammer-drill-1.jpg" alt="Изображение перфоратора Bosch BFG 3000" width="218" height="170">
-              <h2>
+              <h3>
                 Перфоратор BOSCH<br>
                 BFG 3000
-              </h2>
+              </h3>
             </a>
             <span class="old-prise">22500 Р.</span>
             <span class="price">15500 Р.</span>
@@ -212,10 +214,10 @@
           <li class="product-item">
             <a href=""><!-- link to product's page -->
               <img class="product-image" src="img/hammer-drill-2.jpg" alt="Изображение перфоратора Bosch BFG 6000" width="218" height="170">
-              <h2>
+              <h3>
                 Перфоратор BOSCH<br>
                 BFG 6000
-              </h2>
+              </h3>
             </a>
             <span class="old-prise">22500 Р.</span>
             <span class="price">15500 Р.</span>
@@ -225,10 +227,10 @@
           <li class="product-item">
             <a href=""><!-- link to product's page -->
               <img class="product-image" src="img/hammer-drill-3.jpg" alt="Изображение перфоратора Bosch BFG 2000" width="218" height="170">
-              <h2>
+              <h3>
                 Перфоратор BOSCH<br>
                 BFG 2000
-              </h2>
+              </h3>
             </a>
             <span class="old-prise">22500 Р.</span>
             <span class="price">15500 Р.</span>
@@ -272,11 +274,15 @@
       <aside>
         <section class="filters">
           <h2 class="filter-title">Фильтр</h2>
+          <!-- filter price -->
+          <div class="slider-range">
+            <h3 class="visually-hidden">Сортировать по цене</h3>
+            <div class="slider-line"></div>
+            <span class="slider-handle-min"></span>
+            <span class="slider-handle-max"></span>
+          </div>
 
           <form action="https://echo.htmlacademy.ru" method="get">
-            <!-- filter price -->
-            <span>Цена</span>
-            <span class="price-filter"></span>
             <fieldset>
               <legend>Производители:</legend>
               <ul>
