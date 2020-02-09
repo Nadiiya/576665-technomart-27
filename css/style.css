@@ -1,0 +1,380 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ca2c37;
+}
+
+.header-top {
+  background-color: #293449;
+}
+/*
+====================
+styles for header
+====================
+*/
+.main-header {
+  background-color: #f4f7f9;
+}
+
+.main-header ul {
+  list-style: none;
+}
+
+.logo {
+  display: inline-block;
+  text-align: center;
+
+  /*width: 220px;*/
+
+  background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.logo:hover,
+.logo:focus {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+  background-color: #ba2732;
+}
+
+.header-top input {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
+}
+
+/*stiles for searh placeholder*/
+.header-top input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+}
+
+.header-top input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ffffff;
+}
+
+.header-top input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ffffff;
+}
+
+/*hide search clean button*/
+.header-top input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.header-top input:focus {
+  background-color: #ffffff;
+  color: #000000;
+  outline: none;
+}
+
+.header-top a {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.bookmarcs.active,
+.card.active {
+  background-color: #ee3643;
+}
+
+.plase-order {
+  background-color: #63a63e;
+}
+
+.main-header h1 {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  text-align: left;
+  color: #ee3643;
+}
+
+.header-contacts {
+  text-align: center;
+}
+
+.phone-number {
+  font-size: 21px;
+  line-height: 21px;
+  color: #e9292a;
+
+  border: solid 3px #ffffff;
+}
+
+.header-adress {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+
+.user-navigation a {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: left;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ee3643;
+}
+
+.user-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-menu {
+  display: none;
+}
+
+/*.logged-on .user-navigation {
+  display: none;
+}*/
+
+.logged-on .user-menu {
+  display: block;
+}
+
+.user-name a{
+  font-size: 21px;
+  line-height: 21px;
+  text-align: left;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.user-name a:active,
+.user-orders a:active,
+.user-page a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-orders a,
+.user-page a {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.user-orders a:hover,
+.user-page a:hover,
+.user-orders a:focus,
+.user-page a:focus {
+  color: #ee3643;
+}
+
+.site-navigation {
+
+}
+.site-navigation a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
+  background-color: #293449;
+  box-shadow: inset 0px -5px 0 0 #293449;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #32425c;
+}
+
+.site-navigation a:active {
+  background-color: #1d2739;
+}
+/*
+====================
+styles for section about-us
+====================
+*/
+.about-us h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.about-us p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.about-us ul {
+  list-style: none;
+}
+
+.delivering li {
+  font-size: 18px;
+  line-height: 20px;
+  text-align: left;
+}
+
+/*
+====================
+styles for contacts section
+====================
+*/
+.contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.contacts p {
+  font-size: 13px;
+  line-height: 24px;
+
+}
+
+/*
+====================
+styles for footer
+====================
+*/
+.main-footer {
+  background-color: #32425c;
+}
+.footer-logo {
+  /*height: 68px;*/
+}
+
+.footer-contacts {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.page-list,
+.category-list {
+  list-style: none;
+}
+
+.page-list a{
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+
+.category-list a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffd180;
+}
+
+.page-list a:hover,
+.category-list a:hover,
+.page-list a:focus,
+.category-list a:focus {
+  text-decoration: underline;
+}
+
+.page-list a:active {
+  color: rgba(241, 245, 247, 0.5);
+}
+
+.category-list a:active {
+  color: rgba(255, 209, 128, 0.5);
+}
+
+.footer-bottom {
+  background-color: #293449;
+
+}
+
+.footer-copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.social-icons {
+  list-style: none;
+}
+
+.social-icons a {
+  background-color: #212a3a;
+}
+
+.social-icons a:hover,
+.social-icons a:focus,
+.social-icons a:active {
+  background-color: #ee3643;
+}
+
+.mail,
+.designed {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.mail a,
+.designed a{
+  color: #ffd180;
+}
+/*
+====================
+styles for modal
+====================
+*/
+
+.modal {
+  display: none;
+}
+
+
+
