@@ -36,6 +36,8 @@ a {
 
   background-color: #ee3643;
   border: none;
+
+  height: 38px;
 }
 
 .button:hover,
@@ -84,7 +86,6 @@ styles for header
 
 .header-top input {
   font-size: 17px;
-  line-height: 18px;
   color: #ffffff;
 
   background-color: transparent;
@@ -118,7 +119,6 @@ styles for header
 
 .header-top a {
   font-size: 17px;
-  line-height: 18px;
   color: #ffffff;
 }
 
@@ -152,7 +152,6 @@ styles for header
 }
 
 .header-adress {
-  font-size: 14px;
   line-height: 24px;
   color: #32425c;
 }
@@ -205,7 +204,6 @@ styles for header
 .user-orders a,
 .user-page a {
   font-size: 16px;
-  line-height: 18px;
   text-align: left;
   color: #32425c;
   text-decoration: underline;
@@ -282,6 +280,185 @@ styles for contacts section
 
 /*
 ====================
+styles for catalog.html page
+====================
+*/
+.breadcrumbs {
+  list-style: none;
+
+}
+
+.breadcrumbs-item a {
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  color: #32425c;
+  text-transform: uppercase;
+
+  background-color: #f2f6f8;
+}
+
+.product-items {
+  list-style: none;
+}
+
+.product-item {
+  position: relative;
+
+  width: 220px;
+  height: 318px;
+
+  /*font-family: PTSans;*/
+
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.product-item h3,
+.product-item span {
+  font-family: PTSans;
+  font-weight: bold;
+
+}
+
+.product-item h3 {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.old-price {
+  font-size: 17px;
+  line-height: 18px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.price {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-image: url(../img/red-button.svg);
+}
+
+.action-buttons {
+  display: none;
+
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: #fff;
+}
+
+.product-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.product-item:hover .action-buttons {
+  display: block;
+}
+
+.button.buy-btn {
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #63a63e;
+}
+
+.button.buy-btn:hover,
+.button.buy-btn:focus {
+  background-color: #367315;
+}
+
+.button.buy-btn:active{
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.button.bookmark-btn {
+  color: #32425c;
+
+  background-color: transparent;
+  border: solid 3px #63a63e;
+}
+
+.button.bookmark-btn:hover,
+.button.bookmark-btn:focus {
+  border: solid 3px #32425c;
+}
+
+.button.bookmark-btn:active {
+  opacity: 0.3;
+  border: solid 3px #32425c;
+}
+
+.paginations-list {
+  list-style: none;
+}
+
+.pagination-item a{
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+
+  border: solid 1px #e5e5e5;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  border-color: #bdc6ca;
+}
+
+.pagination-item a:active {
+  border-color: #ee3643;
+}
+
+.pagination-item.current a{
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border: none;
+}
+
+/*styles for filters*/
+
+.filters h2 {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.filters ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+
+/*
+====================
 styles for footer
 ====================
 */
@@ -303,23 +480,22 @@ styles for footer
   list-style: none;
 }
 
-.page-list a{
+.footer-navigation a {
   font-size: 18px;
   line-height: 24px;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+  text-decoration: underline;
+}
+
+.page-list a{
   color: #f1f5f7;
 }
 
 .category-list a {
-  font-size: 18px;
-  line-height: 24px;
   color: #ffd180;
-}
-
-.page-list a:hover,
-.category-list a:hover,
-.page-list a:focus,
-.category-list a:focus {
-  text-decoration: underline;
 }
 
 .page-list a:active {
