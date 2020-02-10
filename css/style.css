@@ -1,8 +1,12 @@
+/*
+====================
+global styles
+====================
+*/
 body {
   margin: 0;
   padding: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
@@ -52,12 +56,17 @@ a {
 .header-top {
   background-color: #293449;
 }
+
 /*
 ====================
-styles for header
+styles for index.html
 ====================
+
 */
+/*styles for header*/
+
 .main-header {
+  font-family: "Cuprum", Arial, sans-serif;
   background-color: #f4f7f9;
 }
 
@@ -106,10 +115,9 @@ styles for header
   color: #ffffff;
 }
 
-/*hide search clean button*/
 .header-top input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
-}
+}/*hidden close button*/
 
 .header-top input:focus {
   background-color: #ffffff;
@@ -155,7 +163,6 @@ styles for header
   line-height: 24px;
   color: #32425c;
 }
-
 
 .user-navigation a {
   font-size: 21px;
@@ -216,9 +223,6 @@ styles for header
   color: #ee3643;
 }
 
-.site-navigation {
-
-}
 .site-navigation a {
   font-size: 17px;
   line-height: 17px;
@@ -236,11 +240,12 @@ styles for header
 .site-navigation a:active {
   background-color: #1d2739;
 }
-/*
-====================
-styles for section about-us
-====================
-*/
+
+.main-index {
+  font-family: "Cuprum", Arial, sans-serif;
+}
+/*styles for section about-us*/
+
 .about-us h2 {
   font-size: 30px;
   line-height: 30px;
@@ -262,11 +267,8 @@ styles for section about-us
   text-align: left;
 }
 
-/*
-====================
-styles for contacts section
-====================
-*/
+/* styles for contacts section*/
+
 .contacts h2 {
   font-size: 30px;
   line-height: 30px;
@@ -283,19 +285,24 @@ styles for contacts section
 styles for catalog.html page
 ====================
 */
+.main-catalog {
+  font-family: "PTSans", Arial, sans-serif;
+  font-weight: 400;
+}
+
 .breadcrumbs {
   list-style: none;
 
 }
 
 .breadcrumbs-item a {
-  font-family: PTSans;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
 }
 
 .page-title {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-align: left;
@@ -324,7 +331,6 @@ styles for catalog.html page
 
 .product-item h3,
 .product-item span {
-  font-family: PTSans;
   font-weight: bold;
 
 }
@@ -407,8 +413,8 @@ styles for catalog.html page
 }
 
 .pagination-item a{
-  font-family: PTSans;
   font-size: 13px;
+  font-weight: 400;
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
@@ -453,7 +459,41 @@ styles for catalog.html page
 
 .filters ul {
   list-style: none;
+
+}
+
+.filter-item {
+  line-height: 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.filter-input:hover+ label,
+.filter-input:focus+ label {
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+
+  opacity: 0.4;
+}
+
+.filters .button {
+  font-size: 13px;
   line-height: 18px;
+  color: #000000;
+
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+}
+
+.filters .button:hover,
+.filters .button:focus {
+  border-color: #bdc6ca;
+}
+
+.filters .button:active {
+  border-color: #ee3643;
 }
 
 
@@ -464,6 +504,7 @@ styles for footer
 */
 .main-footer {
   background-color: #32425c;
+  font-family: "Cuprum", Arial, sans-serif;
 }
 .footer-logo {
   /*height: 68px;*/
