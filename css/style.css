@@ -99,7 +99,7 @@ styles for index.html
   /*height: 47px;*/
 
   background-color: #ee3643;
-  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 5px 0 0 rgba(202, 44, 55, 0.24)
 }
 
 .logo:hover,
@@ -296,6 +296,208 @@ styles for index.html
 .main-index {
   font-family: "Cuprum", Arial, sans-serif;
 }
+/*styles for promo-section*/
+.promo-section {
+  margin-bottom: 53px;
+}
+
+.promo-blocks {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-block-item {
+  min-width: 300px;
+  min-height: 123px;
+}
+
+.product-block:nth-child(1) {
+  background-color: #ffbf47;
+}
+
+.product-block:nth-child(2) {
+  background-color: #3bbce3;
+
+}
+
+.product-block:nth-child(3) {
+  background-color: #dc91d8;
+}
+
+.promo-block-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.promo-block-btn {
+  opacity: 0.1;
+  background-color: #000000;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo-block-btn:hover,
+.promo-block-btn:focus {
+  opacity: 0.2;
+}
+
+.promo-block-btn:active {
+  opacity: 0.3;
+}
+
+.promo-section-slider {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-slide-item {
+  min-height: 266px;
+  min-width: 620px;
+  background-color: #3bbce3;
+
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide-drill {
+  background-image: url(../img/slider_1_bg.jpg);
+}
+
+.slide-hammer-drill {
+  background-image: url(../img/slider_2_bg.jpg);
+  display: none;
+}
+
+.promo-slide-title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.promo-slide-description {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.slider-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits-blocks {
+  padding: 0;
+  margin: 0;
+  position: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.benefits-block:nth-child(1) {
+  background-color: #8ed78f;
+}
+
+.benefits-block:nth-child(2) {
+  background-color: #ffc047;
+}
+
+/*styles for best-sellers section*/
+.best-sellers {
+  margin-bottom: 21px;
+}
+.section-header {
+  min-height: 89px;
+  background-color: #f9f5f0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 21px;
+}
+
+.section-header h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  color: #32425c;
+
+  text-transform: uppercase;
+}
+
+.best-sellers-items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*styles for partners section*/
+.partners {
+  margin-bottom: 85px;
+}
+
+.partners-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partners-list-item {
+  min-width: 220px;
+  min-height: 145px;
+  border: solid 1px #eaeaea;
+  background-color: #ffffff;
+}
+
+/*.styles for service section*/
+.service {
+  background-color: #f4f7f9;
+}
+
+.service h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  color: #000000;
+}
+
+.service-description {
+  width: 398px;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+
+.service-slider {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+
 /*styles for section about-us*/
 
 .about-us h2 {
