@@ -53,14 +53,13 @@ a {
 }
 
 .button:active {
-  background-color: #ca2c37;
+  background-color: #ba2732;
 }
 
 .container {
     width: 940px;
     margin: 0 auto;
 }
-
 
 /*
 ====================
