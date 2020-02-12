@@ -625,16 +625,24 @@ styles for footer
   background-color: #ee3643;
 }
 
-.mail,
-.designed {
+.footer-bottom-link {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 }
 
-.mail a,
-.designed a{
+.footer-bottom-link a{
   color: #ffd180;
+}
+
+.footer-bottom-link a:hover,
+.footer-bottom-link a:focus {
+  text-decoration: underline;
+}
+
+.footer-bottom-link a:active {
+  text-decoration: none;
+  color: #ee3643;
 }
 /*
 ====================
