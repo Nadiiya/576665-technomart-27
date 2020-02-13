@@ -34,6 +34,7 @@ a {
 }
 
 .button {
+  display: block;
   font: inherit;
 
   text-align: center;
@@ -113,6 +114,8 @@ styles for index.html
 
 .header-top input {
   min-width: 270px;
+  min-height: 100%;
+  padding: 14px 17px;
 
   font-size: 17px;
   color: #ffffff;
@@ -149,15 +152,39 @@ styles for index.html
   font-size: 17px;
   color: #ffffff;
   min-width: 150px;
+  min-height: 100%;
+  padding: 14px 17px;
+  text-align: center;
 }
 
-.bookmarcs.active,
+.bookmarks.active,
 .card.active {
   background-color: #ee3643;
 }
 
+.bookmarks:hover,
+.bookmarks:focus,
+.card:hover,
+.card:focus {
+  background-color: #212a3a;
+}
+
+.bookmarks:active,
+.card:active {
+  background-color: #161d29;
+}
+
 .plase-order {
   background-color: #63a63e;
+}
+
+.plase-order:hover,
+.plase-order:focus {
+  background-color: #5fbb2d;
+}
+
+.plase-order:active {
+  background-color: #518534;
 }
 
 .header-inner {
@@ -186,11 +213,13 @@ styles for index.html
 
 .phone-number {
   display: block;
-  width: 100%;
+  min-width: 270px;
+  padding: 13px 52px 13px 74px;
 
   font-size: 21px;
   line-height: 21px;
   color: #e9292a;
+  white-space: nowrap;
 
   border: solid 3px #ffffff;
 }
@@ -199,14 +228,31 @@ styles for index.html
   line-height: 24px;
   color: #32425c;
 }
+.user-block {
+  min-width: 281px;
+}
+
+.is-loged .user-navigation {
+  display: none;
+}
+
+.user-navigation {
+  display: flex;
+}
 
 .user-navigation a {
+  display: block;
+  padding: 15px 25px;
   font-size: 21px;
   line-height: 21px;
   text-align: left;
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.login-link {
+  margin-right: 10px;
 }
 
 .user-navigation a:hover,
@@ -230,18 +276,22 @@ styles for index.html
   display: none;
 }
 
-/*.logged-on .user-navigation {
-  display: none;
-}для зарегистрированных пользователей*/
 
-.logged-on .user-menu {
-  display: block;
+.is-loged .user-menu {
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
-.user-name a{
+.is-loged .user-name a{
+  display: block;
+  min-width: 300px;
+  min-height: 45px;
+  padding: 13px 70px 13px 47px;
+  margin-bottom: 10px;
+  text-align: center;
   font-size: 21px;
   line-height: 21px;
-  text-align: left;
   color: #000000;
   background-color: #ffffff;
 }
@@ -463,13 +513,21 @@ styles for index.html
 }
 
 .product-item h3 {
+  min-height: 40px;
+
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+
+  padding: 0 25px;
+  margin-bottom: 15px;
 }
 
 .old-price {
   margin: 0;
+  padding: 0 25px;
+  min-height: 20px;
+  margin-bottom: 10px;
   font-size: 17px;
   line-height: 18px;
   color: #999999;
@@ -477,16 +535,34 @@ styles for index.html
 }
 
 .price {
+  position: relative;
   margin: 0;
-  min-width: 141px;
-  height: 38px;
+  width: 140px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
+  background: #ee3643;
+  white-space: nowrap;
 
-  background-image: url(../img/red-button.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  border-radius: 3px;
+}
+
+.price:after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: -20px;
+
+  width: 0;
+  height: 0;
+
+  border: 20px solid white;
+  border-left-color: #ee3643;
 }
 
 .best-sellers-items {
@@ -531,6 +607,14 @@ styles for index.html
 
 .partners-list-item:nth-child(4n) {
   margin-right: 0;
+}
+
+.partners-list-item:hover,
+.partners-list-item:focus {
+  box-shadow: 0px 10px 25px 0 #29344980;
+}
+.partners-list-item:active{
+  box-shadow: 0px 4px 10px 0 #29344980;
 }
 
 /*.styles for service section*/
@@ -668,7 +752,6 @@ styles for catalog.html page
   margin-bottom: 20px;
   background-color: #f7f3ec;
   display: flex;
-  justify-content: space-between;
   padding: 15px;
 }
 
@@ -680,16 +763,18 @@ styles for catalog.html page
   text-transform: uppercase;
 }
 
+.sorting-title {
+  margin-right: 140px;
+}
+
 .sorting-list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 350px;
   list-style: none;
   padding: 0;
   margin: 0;
   color: #000000;
-  min-width: 82px;
-}
-
-.sorting-list li {
-  display: inline-block;
 }
 
 .sorting-list-item {
@@ -698,6 +783,30 @@ styles for catalog.html page
 
 .sorting-list-item.is-actvated {
   color: #ee3643;
+}
+
+.arrows {
+  width: 50px;
+  margin-left: auto;
+  width: 0;
+  height: 0;
+}
+.arrows::before {
+  /*content: '';
+  width: 0; height: 0;
+
+  border: 10px solid;
+  border-bottom-color: blue;*/
+}
+
+.arrows::after {
+  /*content: '';
+
+  width: 0;
+  height: 0;
+
+  border: 10px solid;
+  border-top-color: red;*/
 }
 
 .catalog-list-items {
@@ -722,12 +831,15 @@ styles for catalog.html page
   display: none;
 
   width: 100%;
+  height: 88px;
 
   position: absolute;
   top: 0;
   left: 0;
 
-  background-color: #fff;
+  padding: 40px 0;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
 }
 
 .product-item:hover {
@@ -739,8 +851,15 @@ styles for catalog.html page
 }
 
 .button.buy-btn {
-  box-shadow: inset 0px -3px 0 0 #367315;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+
   background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-radius:3px;
+  border-bottom-color: #367315;
 }
 
 .button.buy-btn:hover,
@@ -754,10 +873,18 @@ styles for catalog.html page
 }
 
 .button.bookmark-btn {
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
   color: #32425c;
 
-  background-color: transparent;
   border: solid 3px #63a63e;
+  border-radius:3px;
 }
 
 .button.bookmark-btn:hover,
