@@ -174,16 +174,16 @@ styles for index.html
   background-color: #161d29;
 }
 
-.plase-order {
+.place-order {
   background-color: #63a63e;
 }
 
-.plase-order:hover,
-.plase-order:focus {
+.place-order:hover,
+.place-order:focus {
   background-color: #5fbb2d;
 }
 
-.plase-order:active {
+.place-order:active {
   background-color: #518534;
 }
 
@@ -232,7 +232,7 @@ styles for index.html
   min-width: 281px;
 }
 
-.is-loged .user-navigation {
+.is-logged .user-navigation {
   display: none;
 }
 
@@ -277,13 +277,13 @@ styles for index.html
 }
 
 
-.is-loged .user-menu {
+.is-logged .user-menu {
   display: flex;
   flex-wrap: wrap;
 
 }
 
-.is-loged .user-name a{
+.user-name a{
   display: block;
   min-width: 300px;
   min-height: 45px;
