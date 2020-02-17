@@ -1134,23 +1134,32 @@ styles for footer
   padding: 0;
   margin: 0;
   min-width: 134px;
-}
+  display: flex;
 
-.social-icons li {
-  /*display: inline-flex;
-  justify-content: center;
-  align-items: center;*/
-  height: 42px;
-  width: 42px;
 }
 
 .social-icons-item {
-  height: 42px;
+  display: inline-block;
   width: 42px;
-
+  height: 42px;
   border-radius: 50%;
   background-color: #212a3a;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+.social-vk {
+  background-image: url(../img/icon-vk.svg);
+}
+
+.social-fb {
+  background-image: url(../img/icon-fb.svg);
+}
+
+.social-insta {
+  background-image: url(../img/icon-insta.svg);
+}
+
 
 .social-icons-item:hover,
 .social-icons-item:focus,
