@@ -57,8 +57,6 @@ input[type="radio"].visually-hidden {
 
   background-color: #ee3643;
   border: none;
-
-  height: 38px;
 }
 
 .button:hover,
@@ -87,6 +85,7 @@ styles for index.html
   background-color: #f4f7f9;
 
   margin-bottom: 59px;
+  padding-bottom: 60px;
 }
 
 .header-top {
@@ -251,13 +250,13 @@ styles for index.html
 .header-inner {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 44px;
+  margin-bottom: 35px;
   padding-left: 53px;
 }
 
 .main-header h1 {
   width: 195px;
-  margin: 0 70px 0 0;
+  margin: 0 50px 0 0;
 
   font-size: 16px;
   font-style: italic;
@@ -279,8 +278,8 @@ styles for index.html
   display: block;
   min-width: 270px;
   min-height: 45px;
-  margin-bottom: 10px;
-  padding: 13px 45px 10px 60px;
+  margin: 0;
+  padding: 10px 40px 10px 65px;
 
   font-size: 21px;
   line-height: 21px;
@@ -306,7 +305,7 @@ styles for index.html
 .header-address {
   margin: 0;
   padding: 0 10px;
-  line-height: 24px;
+  line-height: 30px;
   color: #32425c;
 }
 .user-block {
@@ -325,10 +324,10 @@ styles for index.html
 
 .user-navigation a {
   display: block;
-  padding: 15px 25px;
+  padding: 10px 25px;
   font-size: 21px;
   line-height: 21px;
-  text-align: left;
+  text-align: right;
   color: #000000;
 
   background-color: #ffffff;
@@ -338,9 +337,8 @@ styles for index.html
   position: relative;
   margin-right: 10px;
   min-width: 121px;
-  padding: 14px 27px 14px 28px;
-  text-align: right;
 }
+
 
 .login-link a::before {
   content: '';
@@ -465,12 +463,31 @@ styles for index.html
 }
 
 .promo-block-item {
+  position: relative;
   min-width: 300px;
   min-height: 123px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.product-block::before {
+  content: '';
+  position: absolute;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .product-block:nth-child(1) {
   background-color: #ffbf47;
+}
+
+.product-block:nth-child(1)::before {
+  width: 45px;
+  height: 65px;
+  top: 30px;
+  right: 45px;
+  background-image: url(../img/icon-1.svg);
 }
 
 .product-block:nth-child(2) {
@@ -478,12 +495,29 @@ styles for index.html
 
 }
 
+.product-block:nth-child(2)::before {
+  width: 75px;
+  height: 61px;
+  top: 30px;
+  right: 30px;
+  background-image: url(../img/icon-2.svg);
+}
+
 .product-block:nth-child(3) {
   background-color: #dc91d8;
 }
 
+.product-block:nth-child(3)::before {
+  width: 78px;
+  height: 62px;
+  top: 30px;
+  right: 30px;
+  background-image: url(../img/icon-3.svg);
+}
+
 .promo-block-title {
   margin: 0;
+  margin-bottom: 15px;
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
@@ -492,22 +526,25 @@ styles for index.html
 }
 
 .promo-block-btn {
-  opacity: 0.1;
-  background-color: #000000;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 135px;
+  padding: 10px 0;
 
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
 .promo-block-btn:hover,
 .promo-block-btn:focus {
-  opacity: 0.2;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .promo-block-btn:active {
-  opacity: 0.3;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .promo-section-slider {
@@ -519,13 +556,23 @@ styles for index.html
 }
 
 .promo-slide-item {
+  position: relative;
   min-height: 266px;
   min-width: 620px;
   background-color: #3bbce3;
+  padding: 25px;
 
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.promo-slide-item::before {
+
+}
+
+.promo-slide-item::after {
+
 }
 
 .slide-drill {
@@ -538,18 +585,30 @@ styles for index.html
 }
 
 .promo-slide-title {
+  margin: 0;
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
   text-align: left;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .promo-slide-description {
+  margin: 0;
   font-size: 18px;
   line-height: 24px;
   text-align: left;
   color: #ffffff;
+}
+
+.slider-buttom {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  width: 195px;
+  padding: 10px 45px;
+  line-height: 18px;
 }
 
 .slider-column {
@@ -566,33 +625,70 @@ styles for index.html
   justify-content: space-between;
 }
 
+.benefits-block {
+  position: relative;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+}
+
 .benefits-block:nth-child(1) {
   background-color: #8ed78f;
+}
+
+.benefits-block:nth-child(1)::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/icon-4.svg);
+  width: 60px;
+  height: 70px;
+  bottom: 20px;
+  right: 45px;
+
 }
 
 .benefits-block:nth-child(2) {
   background-color: #ffc047;
 }
 
+.benefits-block:nth-child(2)::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/icon-5.svg);
+  width: 80px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+
+}
+
 /*styles for best-sellers section*/
 .best-sellers {
-  margin-bottom: 21px;
+  /*margin-bottom: 20px;*/
 }
 .section-header {
-  min-height: 89px;
+  padding: 25px;
+  min-height: 90px;
   background-color: #f9f5f0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .section-header h2 {
-  margin: 0;
+  margin: 5px 0;
   font-size: 30px;
+  font-weight: 400;
   line-height: 30px;
   text-align: left;
   color: #32425c;
   text-transform: uppercase;
+}
+
+.section-header-button {
+  padding: 10px 55px;
+  min-width: 250px;
 }
 
 .product-item {
@@ -617,13 +713,12 @@ styles for index.html
 
 .product-item h3 {
   min-height: 40px;
-
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
   color: #000000;
-
-  padding: 0 25px;
-  margin-bottom: 15px;
+  padding: 5px 25px;
+  margin-bottom: 5px;
 }
 
 .old-price {
@@ -684,7 +779,7 @@ styles for index.html
 
 /*styles for partners section*/
 .partners {
-  margin-bottom: 85px;
+  margin-bottom: 65px;
 }
 
 .partners-list {
@@ -703,6 +798,9 @@ styles for index.html
 
   margin-right: 20px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .partners-list-item:nth-child(4n) {
@@ -720,18 +818,25 @@ styles for index.html
 /*.styles for service section*/
 .service {
   background-color: #f4f7f9;
-  margin-bottom: 82px;
+  padding: 60px 0 100px 0;
 }
 
 .service h2 {
+  margin: 3px 0 25px 0;
+  padding: 0;
   font-size: 30px;
+  font-weight: 400;
   line-height: 30px;
   text-align: left;
   color: #000000;
+  text-transform: uppercase;
 }
 
-.service-description {
-  max-width: 398px;
+.service-content {
+  margin: 0;
+
+  font-family: PT Sans;
+  width: 400px;
   font-size: 13px;
   line-height: 24px;
   text-align: left;
@@ -743,6 +848,27 @@ styles for index.html
   margin: 0;
   list-style: none;
 }
+
+.service-slider-item {
+  position: relative;
+
+}
+
+.service-tab {
+  position: absolute;
+  width: 240px;
+  height: 60px;
+}
+
+.service-description {
+  display: none;
+}
+
+.active .service-description {
+  display: block;
+}
+
+
 
 /*styles for section about-us*/
 .about-us-block {
