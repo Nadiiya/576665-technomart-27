@@ -83,8 +83,6 @@ styles for index.html
 .main-header {
   font-family: "Cuprum", Arial, sans-serif;
   background-color: #f4f7f9;
-
-  margin-bottom: 59px;
   padding-bottom: 60px;
 }
 
@@ -256,7 +254,7 @@ styles for index.html
 
 .main-header h1 {
   width: 195px;
-  margin: 0 50px 0 0;
+  margin: 0 70px 0 0;
 
   font-size: 16px;
   font-style: italic;
@@ -268,7 +266,6 @@ styles for index.html
 
 .header-contacts {
   min-width: 270px;
-  margin-right: 50px;
 
   text-align: center;
 }
@@ -310,6 +307,7 @@ styles for index.html
 }
 .user-block {
   min-width: 281px;
+  margin-left: auto;
 }
 
 .is-logged .user-navigation {
@@ -368,12 +366,13 @@ styles for index.html
 
 .user-menu {
   display: none;
+  margin: 0;
+  padding: 0;
 }
 
 
 .is-logged .user-menu {
-  display: flex;
-  flex-direction: column;
+  display: block;
 
 }
 
@@ -381,9 +380,9 @@ styles for index.html
   display: block;
   min-width: 300px;
   min-height: 45px;
-  padding: 13px 70px 13px 47px;
+  padding: 13px 30px 13px 47px;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -396,8 +395,32 @@ styles for index.html
   color: rgba(0, 0, 0, 0.3);
 }
 
+.user-orders,
+.user-page {
+  display: inline-block;
+}
+
+.user-orders a {
+  padding-left: 17px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.user-orders a:before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: #32425c;
+  top: 50%;
+  right: 10px;
+}
+
+
 .user-orders a,
 .user-page a {
+  display: block;
   font-size: 16px;
   text-align: left;
   color: #32425c;
@@ -448,6 +471,7 @@ styles for index.html
 .main-index {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
+  padding-top: 60px;
 }
 /*styles for promo-section*/
 .promo-section {
@@ -927,13 +951,46 @@ styles for catalog.html page
 }
 
 .breadcrumbs {
+
+  text-align: left;
+
   list-style: none;
-  padding: 0;
-  margin: 0 0 25px;
+  padding: 20px 0;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.breadcrumbs li {
-  display: inline-block;
+.home-icon {
+  display: block;
+  width: 14px;
+  height: 12px;
+  background-image: url(../img/icon-home.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-item {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  margin-right: 40px;
+  position: relative;
+
+}
+
+.breadcrumbs-item::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  top: 0;
+  right: -20px;
+  background-image: url(../img/icon-right-small.svg);
+
+
 }
 
 .breadcrumbs-item a {
@@ -1349,6 +1406,7 @@ styles for footer
   margin: 0;
   min-width: 134px;
   display: flex;
+  flex-wrap: wrap;
 
 }
 
@@ -1360,6 +1418,7 @@ styles for footer
   background-color: #212a3a;
   background-position: center;
   background-repeat: no-repeat;
+  margin-right: 3px;
 }
 
 .social-vk {
