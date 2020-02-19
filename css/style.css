@@ -457,11 +457,11 @@ styles for index.html
 
 .site-navigation a {
   display: block;
-  padding: 22px 31px;
-  vertical-align: middle;
+  padding: 10px;
+  min-height: 60px;
+  text-align: center;
   font-size: 17px;
-  line-height: 17px;
-
+  line-height: 40px;
   color: #ffffff;
   background-color: #293449;
 }
@@ -734,6 +734,19 @@ styles for index.html
   border: solid 1px #e5e5e5;
   background-color: #ffffff;
   text-align: center;
+}
+
+.product-item.new-product::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  right: 0;
+  background-image: url(../img/new-flag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 .product-item h3,
@@ -1297,7 +1310,8 @@ styles for catalog.html page
   display: block;
 }
 
-.button.buy-btn {
+.buy-btn {
+  position: relative;
   min-width: 135px;
   margin: 0 auto 7px;
   padding: 10px 10px 8px 45px;
@@ -1309,17 +1323,30 @@ styles for catalog.html page
   text-align: left;
 }
 
-.button.buy-btn:hover,
-.button.buy-btn:focus {
+.buy-btn::before {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-image: url(../img/icon-cart.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 7px;
+  left: 10px;
+
+}
+
+.buy-btn:hover,
+.buy-btn:focus {
   background-color: #367315;
 }
 
-.button.buy-btn:active {
+.buy-btn:active {
   background-color: #518534;
   box-shadow: none;
 }
 
-.button.bookmark-btn {
+.bookmark-btn {
   width: 129px;
   margin: 0 auto 7px;
   padding: 7px 0;
@@ -1331,12 +1358,13 @@ styles for catalog.html page
   border-radius: 3px;
 }
 
-.button.bookmark-btn:hover,
-.button.bookmark-btn:focus {
+.bookmark-btn:hover,
+.bookmark-btn:focus {
   border: solid 3px #32425c;
+  background-color: transparent;
 }
 
-.button.bookmark-btn:active {
+.bookmark-btn:active {
   opacity: 0.3;
   border: solid 3px #32425c;
 }
@@ -1496,21 +1524,26 @@ styles for catalog.html page
   opacity: 0.4;
 }
 
-.filters .button {
+.filter-submit {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
+  font-family: 'PTSans', sans-serif;
+  text-align: center;
+  padding: 10px;
+  min-width: 140px;
 
   border: solid 1px #e5e5e5;
   background-color: #ffffff;
 }
 
-.filters .button:hover,
-.filters .button:focus {
+.filter-submit:hover,
+.filter-submit:focus {
   border-color: #bdc6ca;
+  background-color: transparent;
 }
 
-.filters .button:active {
+.filter-submit:active {
   border-color: #ee3643;
 }
 
