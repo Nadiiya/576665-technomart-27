@@ -122,7 +122,8 @@ styles for index.html
   background-color: #ba2732;
 }
 
-.header-top input {
+.header-top input[type="search"] {
+  position: relative;
   min-width: 270px;
   min-height: 100%;
   padding-left: 48px;
@@ -132,6 +133,17 @@ styles for index.html
 
   background-color: transparent;
   border: none;
+}
+
+.search-button {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 11px;
+  left: 442px;
+  border: none;
+  background-color: transparent;
+
 }
 
 /*styles for search placeholder*/
@@ -199,8 +211,8 @@ styles for index.html
 }
 
 
-.bookmarks.active,
-.cart.active {
+.bookmarks.full-bookmarks,
+.cart.full-cart {
   background-color: #ee3643;
 }
 
@@ -1264,11 +1276,9 @@ styles for catalog.html page
   right: -5px;
 }
 
-.active.arrows::after {
+.activated-arrow.arrows::after {
   border-bottom-color: #ee3643;
 }
-
-
 
 .catalog-list-items {
   list-style: none;
