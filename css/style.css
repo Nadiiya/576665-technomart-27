@@ -211,8 +211,8 @@ styles for index.html
 }
 
 
-.bookmarks.full-bookmarks,
-.cart.full-cart {
+.bookmarks-active,
+.cart-active {
   background-color: #ee3643;
 }
 
@@ -891,8 +891,7 @@ styles for index.html
 }
 
 .service-content {
-  margin: 0;
-  margin-bottom: 65px;
+  margin: 0 0 65px;
   font-family: PT Sans, sans-serif;
   width: 400px;
   font-size: 13px;
@@ -990,8 +989,7 @@ styles for index.html
 
 
 .service-description h3 {
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px;
   font-size: 36px;
   line-height: 36px;
   text-align: left;
@@ -1000,18 +998,17 @@ styles for index.html
 }
 
 .service-description p {
-  margin: 0;
   width: 275px;
   min-height: 83px;
   font-family: PTSans, sans-serif;
   font-size: 13px;
   line-height: 24px;
   text-align: left;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 
 }
 
-.active .service-description {
+.slider-active .service-description {
   display: block;
 }
 
@@ -1037,31 +1034,26 @@ styles for index.html
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px;
 }
 
 .about-us p {
   font-family: PT Sans, sans-serif;
   font-size: 13px;
   line-height: 24px;
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px;
 }
 
 .about-us ul {
   list-style: none;
-  margin: 0;
-  margin-bottom:35px;
+  margin: 0 0 35px;
   padding: 0;
 }
 
 .delivering-partners li {
   position: relative;
-  padding: 0;
-  padding-left: 36px;
-  margin: 0;
-  margin-bottom: 18px;
+  padding: 0 0 0 36px;
+  margin: 0 0 18px;
   font-size: 18px;
   line-height: 20px;
   text-align: left;
@@ -1094,8 +1086,7 @@ styles for index.html
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px;
   padding: 0;
   text-transform: uppercase;
 }
@@ -1103,8 +1094,7 @@ styles for index.html
 .contacts p {
   font-size: 13px;
   line-height: 24px;
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px;
   font-family: PT Sans, sans-serif;
   max-width: 180px;
 }
@@ -1394,6 +1384,7 @@ styles for catalog.html page
 
 .pagination-item:last-child {
   margin-right: 0;
+  min-width: 120px;
 }
 
 .pagination-item a {
@@ -1699,16 +1690,12 @@ styles for footer
 
 .social-icons {
   list-style: none;
-  padding: 0;
   margin: 0;
   max-width: 135px;
-  padding-top: 37px;
+  padding: 37px 0 0;
   min-width: 235px;
   display: flex;
   flex-wrap: wrap;
-  display: flex;
-  flex-wrap: wrap;
-
 }
 
 .social-icons-item {
@@ -1720,7 +1707,6 @@ styles for footer
   background-color: #212a3a;
   background-position: center;
   background-repeat: no-repeat;
-  margin-right: 3px;
 }
 
 .social-vk {
