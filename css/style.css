@@ -860,6 +860,14 @@ styles for index.html
   justify-content: center;
 }
 
+.partners-list-item a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
 .partners-list-item:nth-child(4n) {
   margin-right: 0;
 }
