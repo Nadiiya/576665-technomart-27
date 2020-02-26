@@ -43,7 +43,9 @@ input[type="radio"].visually-hidden {
 
 .button {
   font-family: "Cuprum", Arial, sans-serif;
-  line-height: 20px;
+  line-height: 18px;
+  padding: 10px;
+  min-height: 38px;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -211,7 +213,6 @@ styles for index.html
 .cart::before {
   background-image: url(../img/icon-cart.svg);
 }
-
 
 .bookmarks-active,
 .cart-active {
@@ -690,10 +691,7 @@ styles for index.html
 }
 
 .slider-button {
-  line-height: 14px;
   width: 195px;
-  min-height: 38px;
-  padding: 13px 10px;
   margin-top: auto;
 }
 
@@ -721,8 +719,8 @@ styles for index.html
 
 .benefits-block-discounts::after {
   position: absolute;
-  right: 45px;
-  bottom: 20px;
+  right: 43px;
+  bottom: 27px;
   width: 60px;
   height: 70px;
   content: '';
@@ -770,9 +768,7 @@ styles for index.html
 }
 
 .section-header-button {
-  width: 250px;
-  min-height: 38px;
-  padding: 10px;
+  min-width: 250px;
 }
 
 .product-item {
@@ -1064,11 +1060,16 @@ styles for index.html
 }
 
 /*styles for section about-us*/
-.about-us-block {
+.about-us-row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
   padding: 75px 0;
+}
+
+.about-us-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-us {
@@ -1092,7 +1093,7 @@ styles for index.html
 }
 
 .about-us ul {
-  margin: 0 0 35px;
+  margin: 0px;
   padding: 0;
   list-style: none;
 }
@@ -1121,7 +1122,8 @@ styles for index.html
 }
 
 .button-more {
-  padding: 10px 40px;
+  width: 220px;
+  margin-top: auto;
 }
 
 /* styles for contacts section*/
@@ -1150,12 +1152,12 @@ styles for index.html
   display: block;
   width: 300px;
   height: 158px;
-  margin-bottom: 50px;
+  margin: 10px auto 40px 0;
 }
 
 .contacts-button {
   width: 100%;
-  padding: 10px 0;
+  margin-top: auto;
 }
 /*
 ====================
@@ -1481,7 +1483,7 @@ line-height: 1;
   font-size: 13px;
   line-height: 18px;
   min-height: 38px;
-  margin: 0 0 20px;
+  margin: 0 0 12px;
   padding: 10px 18px;
   text-transform: uppercase;
   background-color: #f7f3ec;
@@ -1491,6 +1493,7 @@ line-height: 1;
   margin: 0;
   padding: 0;
   border: none;
+  border-bottom: 1px solid #c5c5c5;
 }
 
 .filters legend {
@@ -1559,22 +1562,23 @@ line-height: 1;
 
 .prise-controls {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 220px;
 }
 
 .prise-controls label {
   display: block;
-  width: 50%;
+
 }
 
 .prise-controls input {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
-  width: 95px;
-  padding: 14px;
+  padding: 10px;
   text-align: center;
+  width: 95px;
+  height: 38px;
   border: none;
   border-radius: 5px;
   background-color: #f7f3ec;
