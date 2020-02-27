@@ -1912,13 +1912,16 @@ styles for footer
 
 /*
 ====================
-styles for modal
+styles for modal sections
 ====================
 */
 
 .modal {
   position: fixed;
   z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
@@ -1955,14 +1958,10 @@ styles for modal
 .modal-back {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
-  line-height: 18px;
-  top: 50%;
-  left: 50%;
   display: none;
   width: 620px;
   min-height: 430px;
   padding-top: 45px;
-  transform: translate(-50%, -50%);
   text-align: left;
   color: #000000;
   border-top: 7px solid  #ee3643;
@@ -2043,12 +2042,9 @@ styles for modal
 }
 
 .modal-map {
-  top: 50%;
-  left: 50%;
   display: none;
   width: 940px;
   min-height: 446px;
-  transform: translate(-50%, -50%);
   background-color: #ffffff;
 }
 
@@ -2057,12 +2053,9 @@ styles for modal
 }
 
 .modal-cart {
-  top: 120px;
-  left: 50%;
   display: none;
   width: 620px;
   min-height: 282px;
-  margin-left: -310px;
   border-top: 7px solid  #ee3643;
   background-color: #ffffff;
 }
@@ -2100,8 +2093,6 @@ styles for modal
 
 .modal-cart .button {
   min-width: 215px;
-  min-height: 38px;
-  padding: 8px;
 }
 
 .modal-cart .order-button {
