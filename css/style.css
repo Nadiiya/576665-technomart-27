@@ -468,6 +468,7 @@ styles for index.html
 .user-orders,
 .user-page {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .user-orders a {
@@ -1850,6 +1851,7 @@ styles for footer
   width: 42px;
   height: 42px;
   margin-right: 3px;
+  vertical-align: middle;
   border-radius: 50%;
   background-color: #212a3a;
   background-repeat: no-repeat;
