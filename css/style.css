@@ -75,8 +75,8 @@ input[type="radio"].visually-hidden {
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
   margin: 0;
+  -webkit-appearance: none;
 }
 
 /* Firefox */
@@ -932,7 +932,7 @@ styles for index.html
 
 /*.styles for service section*/
 .service {
-  padding: 60px 0 18px 0;
+  padding: 65px 0 100px 0;
   background-color: #f4f7f9;
 }
 
@@ -940,7 +940,7 @@ styles for index.html
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
-  margin: 3px 0 25px 0;
+  margin: 0 0 25px 0;
   padding: 0;
   text-align: left;
   text-transform: uppercase;
@@ -958,19 +958,24 @@ styles for index.html
 }
 
 .service-slider {
+  display: flex;
+  justify-content: space-between;
+  min-height: 180px;
+}
+
+.service-slider-controls {
   position: relative;
-  min-height: 270px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-sliders-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.service-slider-item {
-  position: relative;
-  min-height: 63px;
-}
-
-.service-slider-item:first-child::before {
+.service-slider-controls::before {
   position: absolute;
   z-index: 10;
   top: -45px;
@@ -986,10 +991,9 @@ styles for index.html
 .service-tab {
   font-size: 21px;
   font-weight: bold;
-  line-height: 21px;
-  position: absolute;
   width: 240px;
-  padding: 22px;
+  min-height: 61px;
+  padding: 20px 23px;
   cursor: pointer;
   text-align: left;
   color: #ffffff;
@@ -998,65 +1002,52 @@ styles for index.html
               inset 0 -4px 0 0 #293449;
 }
 
-.service-tab:hover {
+.service-tab:not(.service-tab-active):hover {
   background-color: #293449;
 }
 
-.service-slider-active .service-tab {
-  color: #32425c;
-  background-color: #fff;
+.service-tab-active {
+   color: #32425c;
+   background-color: #ffffff;
+  box-shadow: none;
 }
 
-.service-tab p {
-  margin: 0;
-}
-
-.service-description {
-  position: absolute;
-  top: 0;
-  right: 0;
+.service-slider-item {
+  position: relative;
   display: none;
   width: 620px;
-  min-height: 280px;
+  min-height: 180px;
+  padding-right: 340px;
 }
 
-.delivery .service-description::before {
+.service-slider-item::before {
   position: absolute;
-  top: 20px;
+  top: 25px;
   right: 0;
+  content: '';
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.delivery::before {
   width: 468px;
   height: 260px;
-  content: '';
   background-image: url(../img/delivery.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
-.guarantee .service-description::before {
-  position: absolute;
-  top: 20px;
-  right: 0;
+.guarantee::before {
   width: 389px;
   height: 283px;
-  content: '';
   background-image: url(../img/guarantee.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
-.credit .service-description::before {
-  position: absolute;
-  top: 20px;
-  right: 0;
+.credit::before {
   width: 465px;
   height: 285px;
-  content: '';
   background-image: url(../img/credit.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
-.service-description h3 {
+.service-slider-item h3 {
   font-size: 36px;
   line-height: 36px;
   margin: 0 0 25px;
@@ -1065,7 +1056,7 @@ styles for index.html
   color: #32425c;
 }
 
-.service-description p {
+.service-slider-item p {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -1075,7 +1066,7 @@ styles for index.html
   text-align: left;
 }
 
-.service-slider-active .service-description {
+.service-slider-active {
   display: block;
 }
 
@@ -1087,8 +1078,7 @@ styles for index.html
 .about-us-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
-  padding: 75px 0;
+  padding: 80px 0;
 }
 
 .about-us-column {
@@ -1113,7 +1103,7 @@ styles for index.html
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
-  margin: 0 0 25px;
+  margin: 0 0 23px;
 }
 
 .about-us ul {
@@ -1124,10 +1114,9 @@ styles for index.html
 
 .delivering-partners li {
   font-size: 18px;
-  line-height: 20px;
   position: relative;
-  margin: 0 0 18px;
-  padding: 0 0 0 36px;
+  margin: 0 0 20px;
+  padding: 0 0 0 35px;
   text-align: left;
 }
 
@@ -1328,11 +1317,11 @@ styles for catalog.html page
 .arrow-up::after {
   top: -8px;
   right: -15px;
-  border-right: 6px solid;
-  border-left: 6px solid;
   border-top: 13px solid;
+  border-right: 6px solid;
   border-bottom: 10px solid;
   border-bottom-color: #c5c5c5;
+  border-left: 6px solid;
 }
 
 .arrow-up:hover::after,
@@ -1343,11 +1332,11 @@ styles for catalog.html page
 .arrow-down::after {
   top: 5px;
   right: -4px;
-  border-right: 6px solid;
-  border-left: 6px solid;
   border-top: 10px solid;
-  border-bottom: 13px solid;
   border-top-color: #c5c5c5;
+  border-right: 6px solid;
+  border-bottom: 13px solid;
+  border-left: 6px solid;
 }
 
 .arrow-down:hover::after,
@@ -1545,7 +1534,6 @@ line-height: 1;
   padding-left: 20px;
   border-radius: 5px;
   background-color: #f7f3ec;
-
 }
 
 .range-controls .toggle {
@@ -1693,7 +1681,6 @@ line-height: 1;
   padding: 10px;
   text-align: center;
   color: #000000;
-
   border: solid 1px #e5e5e5;
   background-color: #ffffff;
 }
@@ -1765,7 +1752,6 @@ styles for footer
   font-size: 18px;
   line-height: 24px;
   width: 325px;
-
   min-height: 40px;
   margin: 0;
   color: #f3f7f9;
@@ -1834,7 +1820,6 @@ styles for footer
 .footer-bottom .container {
   display: flex;
   justify-content: space-between;
-
 }
 
 .footer-copyright {
@@ -1880,7 +1865,6 @@ styles for footer
 .social-inst {
   background-image: url(../img/icon-insta.svg);
 }
-
 
 .social-icons-item:hover,
 .social-icons-item:focus,
