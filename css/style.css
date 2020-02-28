@@ -70,6 +70,7 @@ input[type="radio"].visually-hidden {
   width: 940px;
   margin: 0 auto;
 }
+
 /*Hide arrows from input number*/
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -406,9 +407,8 @@ styles for index.html
   flex-wrap: wrap;
   justify-content: space-between;
   min-width: 300px;
-  min-height: 45px;
-  margin-bottom: 10px;
-  padding: 13px 35px 13px 47px;
+  height: 45px;
+  padding: 13px 35px 10px 47px;
   text-align: left;
   background-color: #ffffff;
 }
@@ -534,12 +534,12 @@ styles for index.html
   background-color: #293449;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a[href]:hover,
+.site-navigation a[href]:focus {
   background-color: #32425c;
 }
 
-.site-navigation a:active {
+.site-navigation a[href]:active {
   background-color: #1d2739;
 }
 
@@ -1117,7 +1117,7 @@ styles for index.html
 }
 
 .about-us ul {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -1326,9 +1326,12 @@ styles for catalog.html page
 }
 
 .arrow-up::after {
-  top: -5px;
+  top: -8px;
   right: -15px;
-  border: 10px solid;
+  border-right: 6px solid;
+  border-left: 6px solid;
+  border-top: 13px solid;
+  border-bottom: 10px solid;
   border-bottom-color: #c5c5c5;
 }
 
@@ -1339,8 +1342,11 @@ styles for catalog.html page
 
 .arrow-down::after {
   top: 5px;
-  right: -5px;
-  border: 10px solid;
+  right: -4px;
+  border-right: 6px solid;
+  border-left: 6px solid;
+  border-top: 10px solid;
+  border-bottom: 13px solid;
   border-top-color: #c5c5c5;
 }
 
