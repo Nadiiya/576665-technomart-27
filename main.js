@@ -1,17 +1,16 @@
-var link = document.querySelector(".contacts-button");
+const link = document.querySelector(".contacts-button");
 
-var popup = document.querySelector(".modal-back");
-var close = document.querySelector(".modal-close");
+const popup = document.querySelector(".modal-back");
+const close = document.querySelector(".modal-close");
 
-var form = document.querySelector(".sender-form");
-var senderName = document.querySelector("[name=name]");
-var senderEmail = document.querySelector("[name=email]");
-var message = document.querySelector("[name=message]");
+const form = document.querySelector(".sender-form");
+const senderName = form.querySelector("[name=name]");
+const senderEmail = form.querySelector("[name=email]");
+const message = form.querySelector("[name=message]");
 
 link.addEventListener('click', function (evt) {
 evt.preventDefault();
 popup.classList.add("modal-show");
-
 senderName.focus();
 });
 
@@ -30,9 +29,9 @@ form.addEventListener("submit", function (evt) {
   }
 });
 
-var mapImage = document.querySelector(".map");
-var mapPopup = document.querySelector(".modal-map");
-var mapClose = mapPopup.querySelector(".modal-close");
+const mapImage = document.querySelector(".map");
+const mapPopup = document.querySelector(".modal-map");
+const mapClose = mapPopup.querySelector(".modal-close");
 
 mapImage.addEventListener("click", function (evt) {
   evt.preventDefault();

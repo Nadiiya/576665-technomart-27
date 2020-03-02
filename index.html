@@ -41,7 +41,8 @@
   <div class="container">
     <div class="header-inner">
       <h1>
-        Интернет-магазин строительных материалов
+        Интернет-магазин<br>
+        строительных материалов<br>
         и инструментов для ремонта
       </h1>
 
@@ -160,8 +161,8 @@
             <p class="promo-slide-description">Настоящие мужские игрушки</p>
             <a class="button slider-button" href="catalog.html">Открыть каталог</a>
           </div>
-          <div class="slider-control slider-control-next"></div>
-          <div class="slider-control slider-control-previous"></div>
+          <button class="slider-control slider-control-next"></button>
+          <button class="slider-control slider-control-previous"></button>
         </div>
         <ul class="benefits-blocks">
           <li class="promo-block-item benefits-block benefits-block-discounts">
@@ -441,11 +442,11 @@
       <div class="sender-input-wrapper">
         <div class="sender-name">
           <label for="sender-name">Ваше имя:</label>
-          <input type="text" name="name" placeholder="Имя Фамилия" id="sender-name">
+          <input type="text" name="name" placeholder="Имя Фамилия" id="sender-name" required>
         </div>
         <div class="sender-email">
           <label for="sender-email">Ваш e-mail:</label>
-          <input type="email" name="email" placeholder="email@example.com" id="sender-email">
+          <input type="email" name="email" placeholder="email@example.com" id="sender-email" required>
         </div>
       </div>
     </fieldset>
@@ -453,7 +454,7 @@
       <legend class="visually-hidden">Сообщение</legend>
       <div class="sender-message">
         <label for="sender-message">Текст письма:</label>
-        <textarea type="text" name="message" placeholder="В свободной форме" id="sender-message"></textarea>
+        <textarea type="text" name="message" placeholder="В свободной форме" id="sender-message" required></textarea>
       </div>
     </fieldset>
     <div class="modal-button-wrapper">
