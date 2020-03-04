@@ -348,7 +348,7 @@
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="margin-left: 0%; width: 84%"></div>
+                    <div class="bar" style="margin-left: 0; width: 84%"></div>
                   </div>
                   <div class="toggle toggle-min"></div>
                   <div class="toggle toggle-max"></div>
@@ -516,12 +516,44 @@
   <h2>Товар добавлен в корзину!</h2>
   <div class="modal-button-wrapper">
     <a class="button order-button" href="">Оформить заказ</a> <!-- link to order's page -->
-    <button class="button" type="button">Продолжить покупки</button>
+    <button class="button button-to-shopping" type="button">Продолжить покупки</button>
   </div>
   <button class="modal-close">
     <span class="visually-hidden">Закрыть</span>
   </button>
 </section>
+<script>
+  const buyBatons = document.querySelectorAll(".buy-btn");
+  const cartPopup = document.querySelector(".modal-cart");
+  const modalCartClose = cartPopup.querySelector(".modal-close");
+  const buttonToShopping = cartPopup.querySelector(".button-to-shopping")
+
+  for (let i = 0; i < buyBatons.length; i++) {
+    buyBatons[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      cartPopup.classList.add("modal-show");
+    });
+  }
+
+  modalCartClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.remove("modal-show");
+  });
+
+  buttonToShopping.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (cartPopup.classList.contains("modal-show")) {
+        cartPopup.classList.remove("modal-show");
+      }
+    }
+  });
+</script>
 </body>
 </html>
 
