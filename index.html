@@ -27,13 +27,13 @@
         </svg>
       </form>
       <a class="top-btn bookmarks" href="">
-        <span>Закладки 0</span>
+        Закладки: 0
       </a>
-      <a class=" top-btn cart cart-active" href="">
-        <span>Корзина 10</span>
+      <a class=" top-btn cart" href="">
+        Корзина: 0
       </a>
       <a class="top-btn place-order" href="">
-        <span>Оформить заказ</span>
+        Оформить заказ
       </a>
     </div>
   </div>
@@ -41,9 +41,9 @@
   <div class="container">
     <div class="header-inner">
       <h1>
-        Интернет-магазин<br>
-        строительных материалов<br>
-        и инструментов для ремонта
+        Интернет-магазин
+        строительных материалов
+        и&nbspинструментов для ремонта
       </h1>
 
       <div class="header-contacts">
@@ -83,6 +83,7 @@
               <span>Равшан Джамшутович</span>
             </a><!-- link to the logout page -->
             <a class="logout" href="">
+              <span class="visually-hidden">Выйти из профиля</span>
               <svg class="logout-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
                 <g>
                   <path d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
@@ -150,20 +151,32 @@
       </ul>
 
       <div class="slider-column">
-        <div class="promo-section-slider">
-          <div class="promo-slide-item slide-drill">
-            <h3 class="promo-slide-title">Дрели</h3>
-            <p class="promo-slide-description">Соседям на радость!</p>
-            <a class="button slider-button" href="catalog.html">Открыть каталог</a>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle" checked>
+        <section class="promo-section-slider">
+          <div class="slider-radio-controls">
+            <label for="product-1">Дрели</label>
+            <label for="product-2">Перфораторы</label>
           </div>
-          <div class="promo-slide-item slide-hammer-drill">
-            <h3 class="promo-slide-title">Перфораторы</h3>
-            <p class="promo-slide-description">Настоящие мужские игрушки</p>
-            <a class="button slider-button" href="catalog.html">Открыть каталог</a>
-          </div>
-          <button class="slider-control slider-control-next"></button>
-          <button class="slider-control slider-control-previous"></button>
-        </div>
+          <ul class="promo-slide-list">
+            <li class="promo-slide-item slide-hammer-drill" id="slide1">
+              <h3 class="promo-slide-title">Перфораторы</h3>
+              <p class="promo-slide-description">Настоящие мужские игрушки</p>
+              <a class="button slider-button" href="catalog.html">Открыть каталог</a>
+            </li>
+            <li class="promo-slide-item slide-drill" id="slide2">
+              <h3 class="promo-slide-title">Дрели</h3>
+              <p class="promo-slide-description">Соседям на радость!</p>
+              <a class="button slider-button" href="catalog.html">Открыть каталог</a>
+            </li>
+          </ul>
+          <button class="slider-control slider-control-next">
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button class="slider-control slider-control-previous">
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
+        </section>
         <ul class="benefits-blocks">
           <li class="promo-block-item benefits-block benefits-block-discounts">
             <h3 class="promo-block-title">Скидки 50%</h3>
@@ -183,45 +196,73 @@
         <a class="button section-header-button" href="">все популярные товары</a>
       </div>
       <ul class="best-sellers-items">
-        <li class="product-item best-sellers-item ">
+        <li class="product-item catalog-list-item">
+          <img class="product-image" src="img/hammer-drill-1.jpg" alt="Изображение товара" width="218" height="170">
           <a href=""><!-- link to product's page -->
-            <img class="product-image" src="img/hammer-drill-1.jpg" alt="Изображение товара" width="218" height="170">
-            <h3>Перфоратор BOSCH<br>
+            <h3>Перфоратор BOSCH
               BFG 9000
             </h3>
           </a>
           <p class="old-price">32500 Р.</p>
           <p class="price">25500 Р.</p>
+          <div class="action-buttons">
+            <button class="button buy-btn" type="button">Купить</button>
+            <button class="button bookmark-btn" type="button">В закладки</button>
+          </div>
         </li>
-        <li class="product-item best-sellers-item">
+        <li class="product-item catalog-list-item">
+          <img class="product-image" src="img/hammer-drill-2.jpg" alt="Изображение товара" width="218" height="170">
           <a href=""><!-- link to product's page -->
-            <img class="product-image" src="img/hammer-drill-2.jpg" alt="Изображение товара" width="218" height="170">
-            <h3>Перфоратор BOSCH<br>
+            <h3>Перфоратор BOSCH
               BFG 3000
             </h3>
           </a>
           <p class="old-price">22500 Р.</p>
           <p class="price">15500 Р.</p>
+          <div class="action-buttons">
+            <button class="button buy-btn" type="button">Купить</button>
+            <button class="button bookmark-btn" type="button">В закладки</button>
+          </div>
+          <div class="action-buttons">
+            <button class="button buy-btn" type="button">Купить</button>
+            <button class="button bookmark-btn" type="button">В закладки</button>
+          </div>
         </li>
-        <li class="product-item best-sellers-item">
+        <li class="product-item catalog-list-item">
+          <img class="product-image" src="img/hammer-drill-3.jpg" alt="Изображение товара" width="218" height="170">
           <a href=""><!-- link to product's page -->
-            <img class="product-image" src="img/hammer-drill-3.jpg" alt="Изображение товара" width="218" height="170">
-            <h3>Перфоратор BOSCH<br>
+            <h3>Перфоратор BOSCH
               BFG 6000
             </h3>
           </a>
           <p class="old-price">30500 Р.</p>
           <p class="price">25500 Р.</p>
+          <div class="action-buttons">
+            <button class="button buy-btn" type="button">Купить</button>
+            <button class="button bookmark-btn" type="button">В закладки</button>
+          </div>
+          <div class="action-buttons">
+            <button class="button buy-btn" type="button">Купить</button>
+            <button class="button bookmark-btn" type="button">В закладки</button>
+          </div>
         </li>
-        <li class="product-item best-sellers-item new-product">
+        <li class="product-item catalog-list-item new-product">
+          <img class="product-image" src="img/hammer-drill-4.jpg" alt="Изображение товара" width="218" height="170">
           <a href=""><!-- link to product's page -->
-            <img class="product-image" src="img/hammer-drill-4.jpg" alt="Изображение товара" width="218" height="170">
-            <h3>Перфоратор BOSCH<br>
+            <h3>Перфоратор BOSCH
               BFG 2000
             </h3>
           </a>
           <p class="old-price"></p>
           <p class="price">12500 Р.</p>
+          <div class="action-buttons">
+            <button class="button buy-btn" type="button">Купить</button>
+            <button class="button bookmark-btn" type="button">В закладки</button>
+          </div>
+          <div class="action-buttons">
+            <button class="button buy-btn" type="button">Купить</button>
+            <button class="button bookmark-btn" type="button">В закладки</button>
+          </div>
         </li>
       </ul>
     </section>
@@ -269,7 +310,7 @@
         </li>
         <li class="partners-list-item">
           <a href="">
-            <img src="img/metabo.png" alt="Логотип фирмы metabo" width="151" height="96">
+            <img src="img/metabo.png" alt="Логотип фирмы metabo" width="204" height="69">
           </a>
         </li>
       </ul>
@@ -344,11 +385,10 @@
       <p>Вы можете забрать товар сами,
         заехав в наш офис:
       </p>
-      <a class="map" href="">
-        <img src="img/map.png" width="300" height="158"
-             alt="Офис компании по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <a class="map" href="https://goo.gl/maps/n59C8AWn9yawP3tcA">
+        <img src="img/map.png" width="300" height="158" alt="Офис компании по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </a>
-      <button class="button contacts-button">Заблудились? Напишите нам!</button>
+      <a class="button contacts-button" href="">Заблудились? Напишите нам!</a>
     </section>
   </div>
 </main>
@@ -408,15 +448,18 @@
       </p>
       <ul class="social-icons">
         <li>
-          <a class="social-icons-item social-vk" href="" target="_blank" title="Логотип Вконтакте">
+          <a class="social-icons-item social-vk" href="" target="_blank">
+            <span class="visually-hidden">Перейти на страницу магазина Вконтакте</span>
           </a>
         </li>
         <li>
-          <a class="social-icons-item social-fb" href="" target="_blank" title="Фейсбук">
+          <a class="social-icons-item social-fb" href="" target="_blank">
+            <span class="visually-hidden">Перейти на страницу магазина в Фейсбук</span>
           </a>
         </li>
         <li>
-          <a class="social-icons-item social-inst" href="" target="_blank" title="Инстаграм">
+          <a class="social-icons-item social-inst" href="" target="_blank">
+            <span class="visually-hidden">Перейти на страницу магазина в Инстаграм</span>
           </a>
         </li>
       </ul>
@@ -472,8 +515,7 @@
   </h2>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616006086!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1583003746213!5m2!1sru!2sua" width="940" height="446" style="border:0;" allowfullscreen=""></iframe>
   <p>
-    <img src="img/big-map.png" width="940" height="446"
-         alt="Офис компании по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    <img src="img/big-map.png" width="940" height="446" alt="Офис компании по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
   </p>
   <button class="modal-close" type="button">
     <span class="visually-hidden">Закрыть</span>
