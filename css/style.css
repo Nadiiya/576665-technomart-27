@@ -335,6 +335,8 @@ styles for index.html
 
 .user-navigation {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 285px;
   margin: 0;
   padding: 0;
 }
@@ -519,7 +521,7 @@ styles for index.html
   margin: 0;
   padding: 0 20px;
   background-color: #32425c;
-  box-shadow: inset 0 -5px 0 0 #293449;
+  border-bottom: 5px solid #293449;
 }
 
 .site-navigation li {
@@ -528,15 +530,13 @@ styles for index.html
 
 .site-navigation a {
   font-size: 17px;
-  line-height: 40px;
-  display: block;
-  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 55px;
   padding: 10px;
-  text-align: center;
   color: #ffffff;
   background-color: #32425c;
-  box-shadow: inset 0 -5px 0 0 #293449;
-
 }
 
 .site-navigation a[href]:hover,
@@ -811,7 +811,7 @@ styles for index.html
 
 .section-header {
   display: flex;
-  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
   min-height: 90px;
   margin-bottom: 20px;
@@ -952,6 +952,7 @@ styles for index.html
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 10px;
   width: 220px;
   height: 145px;
 }
@@ -972,7 +973,7 @@ styles for index.html
 
 /*.styles for service section*/
 .service {
-  padding: 65px 0 100px 0;
+  padding: 65px 0 0 0;
   background-color: #f4f7f9;
 }
 
@@ -1056,34 +1057,22 @@ styles for index.html
   position: relative;
   display: none;
   width: 620px;
-  min-height: 180px;
+  min-height: 283px;
   padding-right: 340px;
-}
-
-.service-slider-item::before {
-  position: absolute;
-  top: 25px;
-  right: 0;
-  content: "";
+  padding-bottom: 50px;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: right bottom;
 }
 
-.delivery::before {
-  width: 468px;
-  height: 260px;
+.delivery {
   background-image: url(../img/delivery.png);
 }
 
-.guarantee::before {
-  width: 389px;
-  height: 283px;
+.guarantee {
   background-image: url(../img/guarantee.png);
 }
 
-.credit::before {
-  width: 465px;
-  height: 285px;
+.credit {
   background-image: url(../img/credit.png);
 }
 
@@ -1300,7 +1289,7 @@ styles for catalog.html page
   width: auto;
   min-height: 38px;
   margin-bottom: 20px;
-  padding: 10px 20px;
+  padding: 10px 0 10px 20px;
   background-color: #f7f3ec;
 }
 
@@ -1316,11 +1305,14 @@ styles for catalog.html page
 }
 
 .sorting-list {
+  position: relative;
   display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
   justify-content: space-between;
-  min-width: 440px;
   margin: 0;
   padding: 0;
+  padding-right: 80px;
   list-style: none;
   color: #000000;
 }
@@ -1329,6 +1321,7 @@ styles for catalog.html page
   cursor: pointer;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
+  margin-right: 25px;
 }
 
 .sorting-list-item:hover,
@@ -1343,54 +1336,35 @@ styles for catalog.html page
   border: none;
 }
 
-.arrows {
-  position: relative;
-  width: 0;
-  height: 0;
-  margin-left: auto;
-}
-
-.arrows::after {
+.sorting-arrows {
   position: absolute;
-  width: 0;
-  height: 0;
-  content: "";
-  cursor: pointer;
-  color: transparent;
 }
 
-.arrow-up::after {
-  top: -8px;
-  right: -25px;
-  border-top: 13px solid;
-  border-right: 6px solid;
-  border-bottom: 10px solid;
-  border-bottom-color: #c5c5c5;
-  border-left: 6px solid;
+.arrow-up {
+  top: 0;
+  right: 50px;
 }
 
-.arrow-up:hover::after,
-.arrow-up:focus::after {
-  border-bottom-color: #000000;
+.arrow-down {
+  top: 0;
+  right: 17px;
 }
 
-.arrow-down::after {
-  top: 5px;
-  right: -4px;
-  border-top: 10px solid;
-  border-top-color: #c5c5c5;
-  border-right: 6px solid;
-  border-bottom: 13px solid;
-  border-left: 6px solid;
+.sorting-arrow-img {
+  fill: #c5c5c5;
 }
 
-.arrow-down:hover::after,
-.arrow-down:focus::after {
-  border-top-color: #000000;
+.activated-arrow .sorting-arrow-img {
+  fill: #ee3643;
 }
 
-.activated-arrow::after {
-  border-bottom-color: #ee3643;
+.sorting-arrow-img:hover,
+.sorting-arrow-img:focus {
+  fill: #000000;
+}
+
+.sorting-arrow-img:active {
+  fill: #ee3643;
 }
 
 .catalog-list-items {
