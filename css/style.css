@@ -520,8 +520,8 @@ styles for index.html
   min-height: 60px;
   margin: 0;
   padding: 0 20px;
-  background-color: #32425c;
   border-bottom: 5px solid #293449;
+  background-color: #32425c;
 }
 
 .site-navigation li {
@@ -952,9 +952,9 @@ styles for index.html
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 10px;
   width: 220px;
   height: 145px;
+  padding-bottom: 10px;
 }
 
 .partners-list-item:nth-child(4n) {
@@ -1251,6 +1251,14 @@ styles for catalog.html page
   background-image: url(../img/icon-right-small.svg);
 }
 
+.home-icon:after {
+  right: -23px;
+}
+
+.breadcrumbs-current {
+  margin-right: 0;
+}
+
 .breadcrumbs-current::after {
   display: none;
 }
@@ -1311,17 +1319,16 @@ styles for catalog.html page
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  padding: 0;
-  padding-right: 80px;
+  padding: 0 80px 0 0;
   list-style: none;
   color: #000000;
 }
 
 .sorting-list-item {
+  margin-right: 25px;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
-  margin-right: 25px;
 }
 
 .sorting-list-item:hover,
@@ -1512,13 +1519,17 @@ styles for catalog.html page
 
 .filter-group {
   margin: 0 0 15px;
-  padding: 0 0 25px;
+  padding: 0 0 20px;
   border: none;
   border-bottom: 1px solid #c5c5c5;
 }
 
+.slider-range {
+  padding-bottom: 25px;
+}
+
 .filter-set {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
   border-bottom: 0;
 }
 
@@ -1611,8 +1622,8 @@ styles for catalog.html page
 }
 
 .price-controls-dash {
-  margin: auto;
   font-size: 16px;
+  margin: auto;
   color: #444444;
 }
 
@@ -1737,6 +1748,7 @@ styles for catalog.html page
 .page-description p {
   font-size: 13px;
   line-height: 24px;
+  max-width: 915px;
   margin: 0;
 }
 
@@ -1780,19 +1792,21 @@ styles for footer
 }
 
 .footer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 555px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .footer-navigation li {
-  display: inline-block;
-  margin-right: 55px;
-  vertical-align: middle;
+  flex-grow: 1;
 }
 
-.footer-navigation li:last-child {
-  margin-right: 0;
+.footer-navigation li:not(:first-child) {
+  margin-left: 60px;
 }
 
 .footer-navigation a {

@@ -128,7 +128,7 @@
   <div class="container">
     <nav aria-label="breadcrumb">
       <ul class="breadcrumbs">
-        <li class=" ">
+        <li>
           <a class="breadcrumbs-item home-icon" href="index.html"><span class="visually-hidden">На главную</span></a>
         </li>
         <li>
@@ -167,7 +167,8 @@
             <li class="sorting-arrows arrow-up">
               <a class="activated-arrow" href="">
                 <span class="visually-hidden">Сортировать по возрастанию</span>
-                <svg class="sorting-arrow-img" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <svg class="sorting-arrow-img" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+                     viewBox="0 0 11 10">
                   <path d="M5.5 0L0 10h11z"/>
                 </svg>
               </a>
@@ -175,7 +176,8 @@
             <li class="sorting-arrows arrow-down">
               <a href="">
                 <span class="visually-hidden">Сортировать по убыванию</span>
-                <svg class="sorting-arrow-img" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <svg class="sorting-arrow-img" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+                     viewBox="0 0 11 10">
                   <path d="M5.5 10L0 0h11"/>
                 </svg>
               </a>
@@ -547,38 +549,7 @@
     <span class="visually-hidden">Закрыть</span>
   </button>
 </section>
-<script>
-  const buyBatons = document.querySelectorAll(".buy-btn");
-  const cartPopup = document.querySelector(".modal-cart");
-  const modalCartClose = cartPopup.querySelector(".modal-close");
-  const buttonToShopping = cartPopup.querySelector(".button-to-shopping")
-
-  for (let i = 0; i < buyBatons.length; i++) {
-    buyBatons[i].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      cartPopup.classList.add("modal-show");
-    });
-  }
-
-  modalCartClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    cartPopup.classList.remove("modal-show");
-  });
-
-  buttonToShopping.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    cartPopup.classList.remove("modal-show");
-  });
-
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (cartPopup.classList.contains("modal-show")) {
-        cartPopup.classList.remove("modal-show");
-      }
-    }
-  });
-</script>
+<script src="js/index.js"></script>
 </body>
 </html>
 
