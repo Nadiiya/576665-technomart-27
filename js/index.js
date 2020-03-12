@@ -22,7 +22,7 @@ if (popup) {
 const mapImage = document.querySelector(".map");
 const mapPopup = document.querySelector(".modal-map");
 
-if(mapPopup) {
+if (mapPopup) {
   const mapClose = mapPopup.querySelector(".modal-close");
   mapImage.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -39,7 +39,7 @@ if(mapPopup) {
 const buyBatons = document.querySelectorAll(".buy-btn");
 const cartPopup = document.querySelector(".modal-cart");
 
-if(cartPopup) {
+if (cartPopup) {
   const modalCartClose = cartPopup.querySelector(".modal-close");
   const buttonToShopping = cartPopup.querySelector(".button-to-shopping")
   for (let i = 0; i < buyBatons.length; i++) {
