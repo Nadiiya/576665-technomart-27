@@ -58,7 +58,6 @@ if(cartPopup) {
     evt.preventDefault();
     cartPopup.classList.remove("modal-show");
   });
-
 }
 
 // close modal windows by key esc
