@@ -1091,9 +1091,17 @@ styles for index.html
   font-size: 13px;
   line-height: 24px;
   width: 275px;
-  min-height: 83px;
+  min-height: 36px;
   margin: 0 0 30px;
   text-align: left;
+}
+
+.guarantee p {
+  width: 379px;
+}
+
+.credit p {
+  width: 279px;
 }
 
 .service-slider-active {
