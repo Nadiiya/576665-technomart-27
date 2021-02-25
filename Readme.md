@@ -2,6 +2,8 @@
 
 * Студент: [Nadiia Derevianchenko](https://up.htmlacademy.ru/htmlcss/27/user/576665).
 * Наставник: [Сергей Шрамко](https://htmlacademy.ru/profile/id852139).
+* Главная страница: [Главная страница](https://nadiiya.github.io/576665-technomart-27/index.html).
+* Страница каталога: [Каталог](https://nadiiya.github.io/576665-technomart-27/catalog.html).
 
 ---
 
